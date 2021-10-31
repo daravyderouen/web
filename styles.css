@@ -1,0 +1,276 @@
+body {
+  background: #ddd;
+  margin: 1rem;
+  padding: 1rem;
+  max-width: 500px;
+  margin: 2rem auto;
+  font-family: "Open Sans", sans-serif;
+}
+
+.nav ol{
+  margin-top: 20px;
+  color: black;
+  background-color: blanchedalmond;
+}
+
+.bonBody {
+  background-image: url(images/2021-10-30\ \(8\).png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+
+}
+
+.bodyProfile {
+  background-image: url(images/lafayette\ strong.png);
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+nav {
+	border-bottom: 2px solid orange;
+}
+
+ol, li {
+	padding-left: 0;
+  color: silver;
+  text-align: center;
+}
+
+.crumb {
+	margin-right: 2em;
+	display: inline;
+
+}
+
+a {
+	color: orange;
+}
+
+a:visited {
+	color: crimson;
+}
+
+
+input {
+	display: block;
+}
+
+img {
+	max-width: 300px;
+}
+
+.feedback {
+	float: inline-start;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li:before {
+    content: "\2665";
+    color: #ec16d0;
+    font-size: larger;
+}
+
+.me{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: center;
+  color: rgb(238, 107, 231);
+  box-shadow: 2px 2px 4px 2px aquamarine;
+}
+
+.clip {
+  border: 2px white;
+  color: rgb(141, 21, 125);
+  text-align: center;
+}
+
+.bluey {
+  background-color: blue;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.destination {
+  background-color: rgb(235, 198, 227);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.habits {
+  background-color: rgb(158, 216, 216);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-style: italic;
+}
+
+
+.subscribe {
+  background-color: rgb(247, 41, 212);
+  border: 2px white;
+  color: white;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: x-large;
+  
+
+}
+
+#random {
+  margin-left: 40%;
+}
+
+#images1 {
+  margin-left: 20%;
+}
+
+
+.homeHeader {
+  text-align: center;
+
+}
+
+.bonH1 {
+  font-style: italic;
+  text-align: center;
+  
+  font-family: cursive;
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+  
+  color: #fff;
+    text-shadow:
+      0 0 7px rgb(212, 211, 211),
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px #0fa,
+      0 0 82px #0fa,
+      0 0 92px #0fa,
+      0 0 102px #0fa,
+      0 0 151px rgb(28, 218, 208);
+}
+  
+
+
+
+.bonH2 {
+  text-align: center;
+  color: rgb(8, 158, 158);
+  font-family: cursive;
+
+}
+
+.bonDiv1 {
+  background-color:  powderblue;
+  box-shadow: 0px 0px 20px 20px #0ff;
+  opacity: 95%;
+  height: 30vh;
+  width: 500px;
+  text-align: center;
+  border: 10px dotted yellow;
+  
+}
+
+.box {
+  width: 75%;
+  height: 50vh;
+  position: sticky;
+  display: flex;
+  justify-content: center;
+  margin-left: 12%;
+
+  
+}
+
+.header-box {
+  border: 1px solid black;
+  margin: auto;
+  height: 160px;
+  width : 500 px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 50px;
+  color: mediumturquoise;
+  background-color: white;
+  border: 10px solid rgba(191, 197, 196, 0.548);
+  box-shadow: 5px 5px 20px 20px #0ff
+}
+
+.header-box h2, .header-box p {
+  text-align: center;
+  font-size: 1.55rem;
+}
+
+#btn {
+  margin-left: 31%;
+  background-color: rgb(103, 241, 241);
+  color: blue;
+  font-size: larger;
+  border-radius: 5px;
+}
+
+
+.bonDiv1 p {
+  color: rgb(51, 2, 2);
+  font-family: cursive;
+  
+}
+
+.lastBonDiv {
+  background: paleturquoise;
+  opacity: .7;
+  font-family: cursive;
+  font-size: 1.3em;
+  text-align: center;
+  margin-left: 5%;
+  box-shadow: 0px 5px 10px 10px rgb(175, 238, 238)
+}
+
+.profileDiv2 {
+  border: 2px white;
+}
+
+.matters {
+  color: silver;
+  text-align: center;
+}
+
+.shortTerm {
+  color:aquamarine;
+  text-align: center;
+  font-size: larger;
+}
+
+.longTerm {
+  color: aquamarine;
+  text-align: center;
+  font-size: larger;
+}
+
+.form {
+  text-align: center;
+  color:pink;
+  justify-content: center;
+  align-items: center;
+}
+
+#foto {
+  border-radius: 3px aqua;
+  box-shadow: 2px 2px 4px 4px pink;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.ulHome li {
+  text-align: center;
+  color:teal;
+
+
+
