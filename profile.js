@@ -23,3 +23,11 @@ function ritualHabits (){
 let ritualButton = document.querySelector("button#ritual")
 //check if that works
 ritualButton.addEventListener("click",ritualHabits)
+
+let subscribeButton = document.querySelector("button#subscribe")
+
+function subscribed () {
+    alert('Thank you for subscribing!')
+}
+
+subscribeButton.addEventListener("click", subscribed)

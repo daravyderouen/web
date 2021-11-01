@@ -14,8 +14,7 @@ body {
 }
 
 .bonBody {
-  background-image: url(images/2021-10-30\ \(8\).png);
-  background-repeat: no-repeat;
+  background-image: url(images/2021-10-31\ \(3\).png);
   background-attachment: fixed;
   background-size: 100% 100%;
 
@@ -35,6 +34,8 @@ ol, li {
 	padding-left: 0;
   color: silver;
   text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .crumb {
@@ -64,50 +65,57 @@ img {
 	float: inline-start;
 }
 
-ul {
+.ulProfile {
     list-style: none;
 }
 
-ul li:before {
+.ulProfile li:before {
     content: "\2665";
     color: #ec16d0;
     font-size: larger;
 }
 
 .me{
+  width: 70vh;
+  border-radius: 20px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   text-align: center;
   color: rgb(238, 107, 231);
-  box-shadow: 2px 2px 4px 2px aquamarine;
+  box-shadow: 8px 1px 10px 8px aquamarine;
 }
 
 .clip {
   border: 2px white;
   color: rgb(141, 21, 125);
   text-align: center;
+  font-size: large;
 }
 
 .bluey {
-  background-color: blue;
-  color: white;
+  background-color: rgb(158, 216, 216);
+  color: rgb(70, 66, 66);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: large;
 }
 
 .destination {
   background-color: rgb(235, 198, 227);
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: large;
 }
 
 .habits {
   background-color: rgb(158, 216, 216);
+  color:#ec16d0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-style: italic;
+  font-size: large;
 }
 
 
 .subscribe {
   background-color: rgb(247, 41, 212);
-  border: 2px white;
+  border-radius: 10px white;
   color: white;
   margin: auto;
   display: flex;
@@ -138,7 +146,6 @@ ul li:before {
   
   font-family: cursive;
     font-size: 40px;
-    color: #fff;
     text-align: center;
   
   color: #fff;
@@ -166,9 +173,10 @@ ul li:before {
 .bonDiv1 {
   background-color:  powderblue;
   box-shadow: 0px 0px 20px 20px #0ff;
+
   opacity: 95%;
-  height: 30vh;
-  width: 500px;
+  height: 25vh;
+  width: 75vh;
   text-align: center;
   border: 10px dotted yellow;
   
@@ -223,11 +231,11 @@ ul li:before {
 
 .lastBonDiv {
   background: paleturquoise;
-  opacity: .7;
+  opacity: .8;
   font-family: cursive;
   font-size: 1.3em;
   text-align: center;
-  margin-left: 5%;
+  margin-left: 7%;
   box-shadow: 0px 5px 10px 10px rgb(175, 238, 238)
 }
 
@@ -236,7 +244,7 @@ ul li:before {
 }
 
 .matters {
-  color: silver;
+  color: aquamarine;
   text-align: center;
 }
 
@@ -272,5 +280,98 @@ ul li:before {
   text-align: center;
   color:teal;
 
+}
 
+/*
+starting marquee stuff at this point
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+bonBody{
+  font-family: sans-serif;
+  background-color: #eee;
+  color: #111;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+:root {
+  --marquee-width: 75vh;
+  --marquee-height: 25vh;
+  --marquee-elements: 13;  /* defined with JavaScript */
+  --marquee-elements-displayed: 5;
+  --marquee-element-width: calc(var(--marquee-width) / var(--marquee-elements-displayed));
+  --marquee-animation-duration: calc(var(--marquee-elements) * 3s);
+}
+
+.marquee {
+  width: var(--marquee-width);
+  height: var(--marquee-height);
+  background-color: #111;
+  color: #eee;
+  overflow: hidden;
+  position: relative;
+}
+.marquee:before, .marquee:after {
+  position: absolute;
+  top: 0;
+  width: 10rem;
+  height: 100%;
+  content: "";
+  z-index: 1;
+}
+.marquee:before {
+  left: 0;
+  background: linear-gradient(to right, #111 0%, transparent 100%);
+}
+.marquee:after {
+  right: 0;
+  background: linear-gradient(to left, #111 0%, transparent 100%);
+}
+.marquee-content {
+  list-style-type: none;
+  height: 100%;
+  display: flex;
+  animation: scrolling var(--marquee-animation-duration) linear infinite;
+}
+.marquee-content:hover {
+  animation-play-state: paused;
+} 
+
+@keyframes scrolling {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(calc(-1 * var(--marquee-element-width) * var(--marquee-elements))); }
+}
+.marquee-content li {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* text-align: center; */
+  flex-shrink: 0;
+  width: var(--marquee-element-width);
+  max-height: 100%;
+  font-size: calc(var(--marquee-height)*3/4); /* 5rem; */
+  white-space: nowrap;
+}
+
+.marquee-content li img {
+  width: 95%;
+  height: 80%;
+  border: 2px solid #eee;
+}
+
+@media (max-width: 600px) {
+  html { font-size: 12px; }
+  :root {
+    --marquee-width: 100vw;
+    --marquee-height: 20vh;
+    --marquee-elements-displayed: 3;
+  }
+  .marquee:before, .marquee:after { width: 1rem; }
+}
